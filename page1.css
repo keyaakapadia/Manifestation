@@ -1,0 +1,140 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    background-color: #c8c5de;
+}
+
+.taskbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #8075ff;
+    padding: 10px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.taskbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.taskbar a:hover {
+    background-color: #555;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%; /* Restrict width */
+    margin: 80px auto; /* Center horizontally */
+    column-gap: 5vh;
+}
+
+.left, .right {
+    background-color: #f0f4ef;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.left {
+    margin-bottom: 200%;
+}
+
+.right {
+    margin-bottom: 50%;
+    margin-top: 100px;
+}
+
+.large-text {
+    font-size: 32px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.small-text {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.reply {
+    color: gray;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    .taskbar {
+        font-size: 12px;
+    }
+
+    .large-text {
+        font-size: 14px;
+    }
+
+    .small-text {
+        font-size: 12px;
+    }
+
+    .left, .right {
+        background-color: #f0f4ef;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .taskbar{
+        overflow-x: auto;
+    }
+
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 5px;
+        background-color: #c8c5de;}
+    }
+
+    @media (max-width:800px) {
+        .taskbar {
+            font-size: 14px;
+        }
+    
+        .large-text {
+            font-size: 16px;
+        }
+    
+        .small-text {
+            font-size: 14px;
+        }
+    
+        .left, .right {
+            background-color: #f0f4ef;
+            border-radius: 10px;
+            padding: 15px;
+        }
+    
+        .taskbar{
+            overflow-x: auto;
+        }
+    
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 15px;
+            background-color: #c8c5de;}
+        }
+
